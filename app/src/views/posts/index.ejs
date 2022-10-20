@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <%- include('../partials/head.ejs') %>
+</head>
+<body>
+
+    <%- include('../partials/nav.ejs') %>
+
+    <div class="container">
+        <h2>게시판</h2>
+        
+        <table class="board-table">
+            <thead class="thead">
+                <tr>
+                    <th>Title</th>
+                    <th class="date">Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <% if(posts == null || posts.length == 0) { %>
+                    <tr>
+                        <td colspan="2">게시글을 등록해주세요!!</td>
+                    </tr>
+                <% } %>
+                <% posts.forEach((post) => { %>
+                    <tr>
+                        <td>
+                            <a href="/posts/<%= post._id %>">
+                                <div class="ellipsis">
+                                    <%= post.title %>
+                                </div>
+                            </a>
+                        </td>
+
+                        <td class="date">
+                            <span><%= post.createdAt %></span>
+                        </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+
+        <div>
+            <a href="/posts/new" class="btn">New</a>
+        </div>
+    </div>
+    
+</body>
+</html>
