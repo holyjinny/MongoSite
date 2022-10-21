@@ -24,6 +24,10 @@ const output = {
         logger.info(`${req.method} ${req.path} => 회원가입 화면으로 이동`);
         res.render('home/register');
     },
+    emailAgree: (req, res) => {
+        logger.info(`${req.method} ${req.path} => 이메일 가입 동의 화면으로 이동`);
+        res.render('home/email/agree');
+    },
 };
 
 module.exports = { output };

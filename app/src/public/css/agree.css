@@ -1,0 +1,202 @@
+:root {
+    --checkAll: #f9f9f9;
+    --checkAllBorder: #e5e5e5;
+    --black: #121212;
+    --lightBlack: #333333;
+    --gray: #ddd;
+    --fontGray: #9b9b9b;
+    --white: #fff;
+    --blue: #3b80f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.agreeContents {
+    clear: both;
+    width: 510px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.agreeContents h2 {
+    padding-top: 72px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.userAgreement2 .contentsAll {
+    margin-top: 50px !important;
+    max-width: 510px !important;
+    padding: 0;
+    padding-bottom: 16px;
+    border: 0;
+}
+
+.userAgreement2 .contents {
+    position: relative;
+    width: 100%;
+    max-width: 462px;
+    margin: 0 auto;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--checkAllBorder);
+}
+
+.userAgreement2 .contentsAll .checkboxSec {
+    padding: 24px;
+    background-color: var(--checkAll);
+    border:  1px solid var(--checkAllBorder);
+}
+
+.checkboxSec input {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 0px;
+    height: 0px;
+}
+
+.checkboxSec label {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.userAgreement2 .contentsAll label {
+    font-weight: 700;
+    color: var(--black);
+    font-size: 20px;
+    line-height: 0.75;
+    letter-spacing: -0.5px;
+}
+
+.checkboxSec label > .check {
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    border: 1px solid var(--lightBlack);
+    background-color: var(--white);
+}
+
+.userAgreement2 .contentsAll .checkboxSec label > .check {
+    border-color: #666666;
+}
+
+.checkboxSec label > .text {
+    padding-left: 12px;
+    text-align: left;
+    word-break: keep-all;
+}
+
+.userAgreement2 .checkboxSec label span.text {
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: -0.42px;
+    color: #666666;
+    font-weight: normal;
+}
+
+.userAgreement2 .checkboxSec label {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: -0.48px;
+    color: #18191c;
+    font-weight: 500;
+}
+
+.userAgreement2 .contents a.detailBtn {
+    position: absolute;
+    top: 28px;
+    right: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: var(--fontGray);
+}
+
+.userAgreement2 .contents .detail {
+    display: block;
+    padding-left: 38px;
+    font-size: 12px;
+    line-height: 2.33;
+    letter-spacing: -0.36px;
+    color: var(--blue);
+    width: auto;
+    padding-bottom: 0;
+    border: 0;
+    background: none;
+    margin-top: 0;
+}
+
+.userAgreement2 .contents .detail2 {
+    padding-left: 38px;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: -0.42px;
+    color: #51555d;
+}
+
+.checkboxSec input[type="checkbox"]:checked + label > .check {
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+.btn {
+    clear: both;
+    width: 510px;
+    text-align: center;
+}
+
+.userAgreement2 .btn {
+    padding: 26px 0 0px;
+}
+
+.userAgreement2 .btn a.nextBtn {
+    min-width: 100px;
+    height: 48px;
+    padding: 10px 20px;
+    font-size: 20px;
+    letter-spacing: -0.48px;
+    box-sizing: border-box;
+}
+
+a.nextBtn {
+    width: 90px;
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.nextBtn a {
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    clear: both;
+    width: 100%;
+    height: 120px;
+    border-top: 1px solid var(--fontGray);
+    color: var(--fontGray);
+}
+
+.footer p {
+    clear: both;
+    padding-top: 39px;
+    font-style: normal;
+    text-align: center;
+}

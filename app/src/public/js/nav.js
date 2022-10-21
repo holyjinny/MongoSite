@@ -22,13 +22,22 @@ $(document).ready(() => {
 });
 
 const activePage = window.location.pathname;
+const values = {
+    "/": 0,
+    "/about": 1,
+    "/posts": 2,
+};
 
-if (activePage === "/") {
-    $(".home").addClass("active");
-}
-if (activePage === "/about") {
-    $(".about").addClass("active");
-}
-if (activePage === "/posts") {
-    $(".board").addClass("active");
+const value = values[activePage];
+
+switch (value) {
+    case 0:
+        $(".home").addClass("active");
+        break;
+    case 1:
+        $(".about").addClass("active");
+        break;
+    case 2:
+        $(".posts").addClass("active");
+        break;
 }

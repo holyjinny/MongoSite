@@ -1,0 +1,170 @@
+:root {
+    --black: #121212;
+    --lightBlack: #333333;
+    --gray: #ddd;
+    --fontGray: #9b9b9b;
+    --white: #fff;
+    --blue: #3b80f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    position: relative;
+    max-width: 492px;
+    min-width: 360px;
+    padding: 0 16px 200px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.header .logo img {
+    width: 100px;
+}
+
+.header .sub p {
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+.contents {
+    padding-top: 60px;
+}
+
+.login-form fieldset {
+    border: none;
+}
+
+.login-form input {
+    width: 100%;
+    height: 56px;
+    padding: 18px 12px;
+    border: 1px solid #e5e8eb;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    outline: 0;
+}
+
+.login-form input:focus {
+    border: 1px solid var(--blue);
+}
+
+.login-form .email,
+.login-form .password {
+    height: 68px;
+}
+
+.saveid {
+    position: relative;
+    height: 42px;
+}
+
+.saveid .checkBox {
+    width: 10px;
+    height: 10px;
+}
+
+.saveid label {
+    font-size: 12px;
+    color: #666;
+    letter-spacing: -.6px;
+    cursor: pointer;
+}
+
+.login-btn button {
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #17191d;
+    transition: all .15s linear;
+    cursor: pointer;
+}
+
+.login-btn button:hover {
+    background-color: var(--blue);
+    border: none;
+}
+
+.loginMenu {
+    position: relative;
+    height: 40px;
+    padding-top: 12px;
+}
+
+.loginMenu a {
+    font-weight: 700;
+    letter-spacing: -.6px;
+    color: #737881;
+    margin-right: 8px;
+    transition: all .15s linear;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.loginMenu a:hover {
+    color: var(--blue);
+}
+
+.oauth {
+    padding-top: 48px;
+}
+
+.oauth:first-child {
+    margin-top: 0;
+}
+
+.oauth button {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 52px;
+    padding: 0 0 0 17px;
+    margin-top: 6px;
+    border: 1px solid #e5e8eb;
+    font-size: 14px;
+    text-align: center;
+    color: #737881;
+    background-color: #fff;
+    transition: all .15s linear;
+    cursor: pointer;
+}
+
+.oauth button:hover {
+    background: #ddd;
+}
+
+.oauth .icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-width: 328px;
+    height: 80px;
+    padding: 32px 0 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 11px;
+    color: #9fa1a7;
+}

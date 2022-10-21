@@ -14,4 +14,7 @@ router.get('/login', ctrl.output.login);
 // 회원가입 페이지
 router.get('/register', ctrl.output.register);
 
+// 이메일 회원가입 동의 페이지
+router.get('/agree', ctrl.output.emailAgree);
+
 module.exports = router;
