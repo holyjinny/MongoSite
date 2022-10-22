@@ -17,4 +17,10 @@ router.get('/register', ctrl.output.register);
 // 이메일 회원가입 동의 페이지
 router.get('/agree', ctrl.output.emailAgree);
 
+// 본인 확인 페이지
+router.get('/selfConfirm', ctrl.output.selfConfirm);
+
+// 인증 OTP 페이지
+router.get('/otp', ctrl.output.otp);
+
 module.exports = router;

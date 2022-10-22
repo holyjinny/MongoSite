@@ -122,6 +122,10 @@
     color: var(--fontGray);
 }
 
+.userAgreement2 .contents a.detailBtn:hover {
+    color: var(--blue);
+}
+
 .userAgreement2 .contents .detail {
     display: block;
     padding-left: 38px;
@@ -146,6 +150,9 @@
 
 .checkboxSec input[type="checkbox"]:checked + label > .check {
     background-color: var(--blue);
+    background-image: url("../img/check.png");
+    background-repeat: no-repeat;
+    background-position: center center;
     border-color: var(--blue);
 }
 

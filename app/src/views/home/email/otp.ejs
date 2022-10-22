@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OTP 페이지</title>
+  
+  <!-- 타이틀 옆 아이콘 -->
+  <link rel="shortcut icon" href="./img/jinny-logo1.png" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/otp.css">
+
+    <!-- JS -->
+    <script src="/js/otp.js" defer></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+	
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="container">
+
+            <div class="phoneSec">
+                <h2>번호를 입력해주세요</h2>
+
+                <div class="phone-input">
+                    <input type="text" id="phone-number">
+                </div>
+                <span class="text-danger"></span>
+
+                <button class="sendBtn">OTP 받기</button>
+
+            </div>
+
+            <div class="otpSec pass">
+                <h2>OTP를 입력해주세요</h2>
+
+                <p>인증요청을 받은 휴대 전화 : <span class="phone"></span></p>
+                <p>OTP : <span class="otp-text"></span></p>
+
+                
+                <div class="otp-input">
+                    <input type="text" maxlength="1" class="input">
+                    <input type="text" maxlength="1" class="input">
+                    <input type="text" maxlength="1" class="input spacing">
+                    <input type="text" maxlength="1" class="input">
+                    <input type="text" maxlength="1" class="input">
+                    <input type="text" maxlength="1" class="input">
+                </div>
+                <div class="text-container">
+                    <span class="text-danger"></span>
+                    <p class="expire"></p>
+                </div>
+                
+                <button class="confirmBtn">인증하기</button>
+                
+            </div>
+
+            <div class="box-verify">
+                <i class="fa-solid fa-circle-check"></i>
+                <p></p>
+            </div>
+
+
+        </div>
+    
+    </div>
+
+    <div class="footer">
+        <p class="copyright">© JINNY Korea Corporation All Rights Reserved.​</p>
+    </div>
+
+</body>
+</html>

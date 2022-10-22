@@ -28,6 +28,14 @@ const output = {
         logger.info(`${req.method} ${req.path} => 이메일 가입 동의 화면으로 이동`);
         res.render('home/email/agree');
     },
+    selfConfirm: (req, res) => {
+        logger.info(`${req.method} ${req.path} => 본인 확인 화면으로 이동`);
+        res.render('home/email/selfConfirm');
+    },
+    otp: (req, res) => {
+        logger.info(`${req.method} ${req.path} => OTP 화면으로 이동`);
+        res.render('home/email/otp');
+    },
 };
 
 module.exports = { output };
